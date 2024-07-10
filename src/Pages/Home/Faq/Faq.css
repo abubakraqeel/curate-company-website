@@ -1,0 +1,48 @@
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 153px;
+  padding-inline: 20px;
+}
+.faq h1 {
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  color: #1f1f39;
+  margin-bottom: 3rem;
+}
+.faq-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.faq-grid .faq-row:last-of-type {
+  border-bottom: none;
+}
+@media screen and (max-width: 1000px) {
+  .faq {
+    margin-top: 250px;
+    align-items: flex-start;
+  }
+  .faq h1 {
+    text-align: left;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .faq {
+    margin-top: 200px;
+    align-items: flex-start;
+  }
+}

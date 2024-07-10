@@ -1,0 +1,242 @@
+.hero-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1500px;
+  padding-inline: 20px;
+  padding-top: 30px;
+  background-image: url("../../../Assets/patterns/hero-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  overflow: visible;
+  position: relative;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f5f5f5;
+  mix-blend-mode: normal;
+  border-radius: 84px;
+  max-width: 1400px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.left-hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 80px;
+  flex: 1;
+}
+.left-hero img {
+  margin-top: 3rem;
+}
+.left-hero h1 {
+  color: black;
+  font-size: 52px;
+}
+.left-hero p {
+  color: black;
+  font-size: 16px;
+  max-width: 90%;
+  line-height: 35px;
+}
+
+.right-hero {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+.right-hero img {
+  max-width: 600px;
+  width: 100%;
+  object-fit: contain;
+}
+.desktop-hero {
+  display: block;
+}
+.hero-mobile {
+  display: none;
+}
+.float {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 38px;
+  background: #ffffff;
+  box-shadow: 6px 11px 8px -3px rgba(0, 0, 0, 0.15);
+  border-radius: 63px;
+  z-index: 2;
+  gap: 10px;
+}
+.graph-hero {
+  position: absolute;
+  top: 49%;
+  left: 16%;
+  width: 100%;
+  max-width: 500px !important;
+}
+.left-float,
+.right-float {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-float {
+  gap: 10px;
+}
+.bold-float {
+  font-weight: 500;
+  font-size: 15px;
+  color: black;
+}
+.light {
+  font-weight: 500;
+  font-size: 12px;
+  color: #9299a3;
+}
+.float1 {
+  width: 117px;
+}
+.float2 {
+  width: 132px;
+}
+.float3 {
+  width: 136px;
+}
+.float4 {
+  width: 182px;
+}
+.float5 {
+  width: 118px;
+}
+.hero .float1 {
+  top: 82%;
+  left: 69%;
+}
+.hero .float2 {
+  top: 11%;
+  left: 66%;
+}
+.hero .float3 {
+  top: 74%;
+  left: 16%;
+}
+.hero .float4 {
+  top: 34%;
+  left: 12%;
+}
+.hero .float5 {
+  top: 40%;
+  left: 76%;
+}
+
+@media screen and (max-width: 1200px) {
+  .bold-float {
+    font-size: 15px;
+  }
+  .left-hero img {
+    margin-top: 0rem;
+  }
+  .hero .float1 {
+    top: 72%;
+    left: 66%;
+  }
+  .hero .float2 {
+    top: 11%;
+    left: 69%;
+  }
+  .hero .float3 {
+    top: 74%;
+    left: 11%;
+  }
+  .hero .float4 {
+    top: 8%;
+    left: 10%;
+  }
+  .hero .float5 {
+    top: 36%;
+    left: 62%;
+  }
+  .hero-cont {
+    background: none;
+  }
+  .graph-hero {
+    left: 0;
+    max-width: 100% !important;
+  }
+  .hero {
+    flex-direction: column;
+    background: none;
+    gap: 70px;
+    overflow: visible;
+  }
+  .left-hero {
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+  .left-hero h1 {
+    font-size: 2.5rem;
+  }
+  .left-hero p {
+    max-width: 500px;
+  }
+  .desktop-hero {
+    display: none;
+  }
+  .hero-mobile {
+    display: block;
+  }
+  .hero-img {
+    max-width: 500px !important;
+    object-fit: contain;
+    border-radius: 20px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .left-hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero .float2 {
+    top: 11%;
+    left: 64%;
+  }
+  .hero .float4 {
+    top: 8%;
+    left: 7%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .hero .float1 {
+    top: 72%;
+    left: 62%;
+  }
+  .hero .float2 {
+    top: 11%;
+    left: 60%;
+  }
+  .hero .float3 {
+    top: 74%;
+    left: 11%;
+  }
+  .hero .float4 {
+    top: 8%;
+    left: 2%;
+  }
+  .hero .float5 {
+    top: 36%;
+    left: 62%;
+  }
+}

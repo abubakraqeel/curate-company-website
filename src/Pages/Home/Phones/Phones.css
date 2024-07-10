@@ -1,0 +1,32 @@
+.phone-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 400px;
+  width: 100%;
+}
+.phone-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: 20px;
+  max-width: 1400px;
+  width: 100%;
+  gap: 5rem;
+}
+.row-phone {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.phone-img {
+  max-width: 100%;
+  object-fit: contain;
+}
+@media screen and (max-width: 1000px) {
+  .phone-cont {
+    display: none;
+  }
+}
